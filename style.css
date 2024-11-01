@@ -89,10 +89,10 @@ header{
     position: fixed;
     right: 0;
     top: 0;
-    /* height: 100vh; */
+    height: 100dvh;
     width: 80%;
     padding: 2rem;
-    gap: 1rem; 
+    gap: .5rem; 
     box-shadow: 0 0 0 300vmax rgba(0, 0, 0, 0.5);
     z-index: 1;
     display: flex;
