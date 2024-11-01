@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;900&display=swap');
+
+/* CSS GENERAL */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1, h2, h3, h4, p, a, li{
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    position: relative;
+}
+
+.logo{
+    max-height: 8rem;
+}
+
+.fa-bars{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+#abrir-menu {
+    transition: all 0.2s ease-in-out;
+}
+  
+#abrir-menu:hover {
+    animation: balanceo 0.6s ease-in-out;
+}
+
+#abrir-menu:hover{
+    color: #000033;
+}
+
+@keyframes balanceo {
+    0%{
+      transform: translateX(0);
+    }
+
+    25%{
+      transform: translateX(-2px);
+    }
+
+    50%{
+      transform: translateX(0);
+    }
+
+    75%{
+      transform: translateX(2px);
+    }
+
+    100%{
+      transform: translateX(0);
+    }
+}
+
+.navegacion{
+    background-color: #e9e9e9;
+    color: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 0 0 0 300vmax rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.logo-navegacion{
+    max-width: 12rem;
+}
+
+.navegacion li{
+    list-style-type: none;
+}
+
+.menu-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-titulo h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.menu-titulo i{
+    font-size: 1.5rem;
+}
+
+.menu-titulo i:hover{
+    cursor: pointer;
+    color: #130080;
+}
+
+.menu-navegacion{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.menu-navegacion a{
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.menu-navegacion a:hover{
+    color: #130080;
+}
+
+.menu-contacto{
+    border-bottom: 3px solid #130080;
+    border-top: 3px solid #130080;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-contacto a{
+    color: #2c2c2c;
+    font-size: 1rem;
+}
+
+.menu-contacto a:hover{
+    color: #130080;
+}
+
+.menu-contacto li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-contacto li i{
+    font-size: 1.2rem;
+    width: 1rem;
+}
+
+.activo{
+    display: flex;
+    transition: right .3s;
+}
+
+.cerrar{
+    right: -100%;
+    display: none;
+}
+
+/* SECCION UNO */
+.seccion-uno{
+    background-color: #7881cd;
+    color: #fff;
+    height: 100vh;   
+    margin-top: -10rem;
+    padding: 10rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.texto-mediano{
+    font-size: 1.4rem;
+}
+
+#maquina-de-escribir{
+    font-size: 2.5rem;
+    height: 5rem;
+}
+
+@keyframes typing{
+    from {
+      width: 0;
+    }
+  } 
+
+#maquina-de-escribir::after{
+    content: "|";  
+    font-weight: 500;
+    position: absolute;
+    margin-left: 5px;
+    animation: typing 2s steps(20, end) infinite; 
+}
+
+.texto-grande{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.fa-arrow-down{
+    font-size: 2.5rem;
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.fa-arrow-down:hover{
+    color: #000033;
+    transform: translateY(.5rem);
+    cursor: pointer;
+}
+
+/* SECCIÓN DOS */
+.contenedor-grande{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+}
+
+.texto-chico{
+    font-size: 18px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+button a{
+    color: #000;
+    display: inline-block;
+    border-bottom: 2px solid #000;
+}
+
+button a:hover{
+    color: #102c6d;
+}
+
+.fa-chevron-right{
+    font-size: 1rem;
+}
+
+.contenedor-chico{
+    background-color: #102c6d;
+    padding: 3rem 1.5rem;
+}
+
+/* SECCIÓN TRES */
+.lista{
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.seccion-tres .contenedor-chico{
+    background-color: #2a4185;
+}
+
+/* SECCIÓN CUATRO */
+.seccion-cuatro .contenedor-chico{
+    background-color: #44579d;
+}
+
+.contenedor-datos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.borde-abajo{
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #2c2c2c;
+    display: inline-block;
+}
+
+.borde-abajo .texto-mediano{
+    padding-bottom: .5rem;
+}
+
+.texto-mediano-hover:hover{
+    color: #102c6d;
+}
+
+.contenedor-form{
+    background-color: #5e6cb5;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.campo-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.campo-formulario label{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.campo-formulario input{
+    background-color: rgba(236, 236, 236, 0.815);
+    height: 1.8rem;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    color: #2c2c2c;
+    padding: .4rem;
+}
+
+.campo-formulario input:focus{
+    outline: none;
+    background-color: rgba(236, 236, 236, 0.541);
+  }
+
+.campo-formulario textarea{
+    background-color: rgba(236, 236, 236, 0.815);
+    border: 1px solid #fff;
+    font-size: 1rem;
+    color: #2c2c2c;
+    padding: .4rem;
+}
+
+.campo-formulario textarea:focus{
+    outline: none;
+    background-color: rgba(236, 236, 236, 0.541);
+}
+
+.boton-formulario{
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    width: 40%;
+    text-align: center;
+}
+
+.boton-formulario:hover{
+    background-color: #0c0c0c;
+    cursor: pointer;
+}
+
+/* SECCIÓN PORTAFOLIO */
+.seccion-portafolio{
+    background-color: #102c6d;
+    color: #fff;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion-portafolio .texto-chico{
+    padding-bottom: 1rem;
+}
+
+.contenedor-tres-paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-portada-container{
+    position: relative;
+    margin: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: background-color 1s, opacity 1s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.image-portada-container:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.966);
+    opacity: 1;
+}
+
+.overlay h3 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.overlay p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: .4rem;
+    width: 100%;
+}
+
+.overlay .button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 1rem;
+}
+
+.button div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.button div span {
+    font-size: 1rem;
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: #000033;
+    font-weight: 700;
+}
+
+.image-portada-container:hover .overlay h3,
+.image-portada-container:hover .overlay p,
+.image-portada-container:hover .overlay .button {
+    opacity: 1;
+}
+
+footer{
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f2f2f2;
+}
+
+.logo-oscuro{
+    max-width: 17rem; 
+}
+
+.contenedor-chico-footer{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contenedor-chico-footer a{
+    color: #000;
+}
+
+.contenedor-chico-footer i{
+    font-size: 1.1rem;
+    color: #000033;
+}
+
+.fa-envelope{
+    font-size: 1.5rem;
+}
+
+.contenedor-chico-footer p{
+    font-size: 1.1rem;
+    padding: .2rem;
+}
+
+.contenedor-chico-footer p:hover{
+    color: #000033;
+}
+
+footer h3{
+    padding-bottom: .6rem;
+    font-weight: 800;
+}
+
+.iconos-sociales i{
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+    color: #000033;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-cm{
+    background-color: #7881cd;
+    color: #fff;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.seccion-cm button a{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.seccion-cm button a:hover{
+    color: #000033;
+    border-bottom: 2px solid #000033;
+}
+
+/* PÁGINAS INDIVIDUALES DEL PORTAFOLIO */
+.contenedor-pagina{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contenedor-informacion-web{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    margin-top: -10rem;
+    padding: 10rem 1.5rem 1.5rem 1.5rem;
+    background-color: #7881cd;
+    color: #fff;
+}
+
+.contenedor-informacion-web h2{
+    border-bottom: .2rem solid #000033;
+}
+
+.contenedor-informacion-web h4{
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.contenedor-informacion-web button{
+    background-color: #000;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+}
+
+.contenedor-informacion-web button:hover{
+    background-color: #000033;
+}
+
+.contenedor-informacion-web button a{
+    color: #fff !important;
+    font-size: 1rem;
+    border-bottom: none;
+}
+
+.imagen-web{
+	border: .5rem solid #fff;
+	margin-top: 1rem;
+	padding: .7rem;
+}
+
+.contenedor-imagen-web{
+    padding: 1rem;
+}
+
+.bg-tattoo-skink{
+    background-color: #af0505;
+}
+
+
+
+/* MEDIA QUERY PARA TABLET Y ESCRITORIO */
+@media only screen and (min-width: 768px) {
+    .logo{
+        max-height: 12rem;
+    }
+
+    header{
+        padding: 0 5rem;
+    }
+
+    .fa-bars{
+        font-size: 2rem;
+    }
+
+    .seccion-uno{
+        margin-top: -14em;
+        padding: 14rem 3rem 0 3rem;
+        height: 105vh;
+    }
+
+    #maquina-de-escribir{
+        font-size: 5rem;
+    }
+
+    .texto-mediano{
+        font-size: 1.5rem;
+    }
+
+    .texto-grande{
+        font-size: 3rem;
+    }
+
+    .fa-arrow-down{
+        font-size: 3rem;
+    }
+
+    .seccion-flex{
+        display: flex;
+        height: 100vh;
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .contenedor-chico{
+        flex-basis: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedor-grande{
+        flex-basis: 70%;
+        gap: 1rem;
+    }
+
+    .contenedor-grande-izquierda{
+        justify-content: center;
+        padding: 3rem 5rem 3rem 13rem;
+    }
+
+    .imagen-seccion-izq{
+        position: absolute;
+        left: 6rem;
+    }
+
+    .contenedor-grande-derecha{
+        justify-content: center;
+        padding: 3rem 13rem 3rem 5rem;
+    }
+
+    .img-seccion-der{
+        position: absolute;
+        right: 1rem;
+        max-width: 45%;
+    }
+
+    .contenedor-tres-paginas{
+        flex-direction: row;
+    }
+
+    .overlay {
+        height: 98%;
+    }
+
+    .overlay h3{
+        top: 30%;
+    }
+
+    .overlay p{
+        top: 45%;
+    }
+
+    .overlay .button{
+        top: 70%;
+    }
+
+    .image-portada-container img {
+        height: 15rem;
+        width: 27rem;
+    }
+
+    footer{
+        flex-direction: row;
+        padding: 3rem 5rem;
+        justify-content: space-around;
+    }
+
+    .logo-oscuro{
+        max-height: 7rem;
+    }
+
+    .seccion-cm{
+        padding: 3rem 5rem;
+    }
+
+    .navegacion{
+        width: 30%;
+    }
+
+    .logo-navegacion{
+        max-width: 14rem;
+    }
+}
+
+/* MEDIA QUERY PARA TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo{
+        max-height: 10rem;
+    }
+    
+    header{
+        padding: 0 3rem;
+    }
+    
+    .fa-bars{
+        font-size: 1.5rem;
+    }
+    
+    #maquina-de-escribir{
+        font-size: 4rem;
+    }
+    
+    .texto-grande{
+        font-size: 2rem;
+    }
+    
+    
+    .contenedor-grande-izquierda{
+        justify-content: center;
+        padding: 3rem 3rem 3rem 13rem;
+    }
+    
+    .imagen-seccion-izq{
+        left: 1rem;
+        max-height: 90%;
+    }
+    
+    .seccion-cuatro{
+        height: 150vh;
+    }
+
+    .seccion-cuatro h3{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-grande-derecha{
+         padding: 3rem 10rem 3rem 3rem;
+    }
+    
+    .img-seccion-der{
+        right: 0rem;
+    }
+
+    .image-portada-container img {
+        height: 10rem;
+        width: 27rem;
+    }
+
+    .overlay .button {
+        width: 70%;
+        top: 75%;
+    }
+
+    footer{
+        padding: 3rem 0rem;
+    }
+
+    .logo-oscuro {
+        max-height: 5rem;
+    }
+
+    .navegacion{
+        width: 40%;
+    }
+
+    .menu-navegacion a {
+        font-size: 1.1rem;
+    }
+
+    .menu-navegacion{
+        gap: 0.2rem;
+    }   
+}
+
+/* MEDIA QUERY PARA ESCRITORIO */
+@media only screen and (min-width: 1025px) {
+    .contenedor-datos{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #contacto .contenedor-grande-derecha{
+        padding: 3rem 5rem;
+    }
+
+    #contacto .contenedor-grande{
+        align-items: normal;
+    }
+
+    .contenedor-pagina{
+        flex-direction: row;
+    }
+
+    .contenedor-informacion-web{
+        flex: 1 1 40%;
+        margin-top: -14em;
+        padding-top: 12rem;
+    }
+
+    .contenedor-imagen-web{
+        flex: 1 1 60%;
+        margin-top: -14em;
+        padding-top: 12rem;
+    }
+
+
+}

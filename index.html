@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/Favicon FG - Diseño y Programación Web.png" type="image/png">
+    <title>FG - Diseño y Desarrollo Web WordPress</title>
+</head>
+<body>
+    <header>
+            <a href="index.html"><img src="./images/Logo FG - Diseño y Programación Web.png" alt="Logo FG Programación Web" class="logo"></a>
+            <i class="fa-solid fa-bars" id="abrir-menu"></i>
+            <nav class="navegacion" id="navegacion">
+                <div class="menu-titulo">
+                    <h2>Menú</h2>
+                    <i class="fa-solid fa-xmark" id="cerrar-menu"></i>
+                </div>
+                <ul class="menu-navegacion">
+                    <li><a href="#" class="enlace-menu">Inicio</a></li>
+                    <li><a href="#portafolio" class="enlace-menu">Portafolio Diseño Web</a></li>
+                    <li><a href="#community-manager" class="enlace-menu">Community Manager</a></li>
+                    <li><a href="#contacto" class="enlace-menu">Contacto</a></li>
+                </ul>
+                <ul class="menu-contacto">
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:fgprogramacionweb@gmail.com"><p>fgprogramacionweb@gmail.com</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.link/pfq4lz" target="_blank"><p>+54 3584866129</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/fedegeretto" target="_blank"><p>@fedegeretto</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <a href="https://www.tiktok.com/@fgprogramacionweb" target="_blank"><p>@fgprogramacionweb</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://www.youtube.com/@fgprogramacionweb?sub_confirmation=1" target="_blank"><p>@fgprogramacionweb</p></a>
+                    </li>
+                </ul>
+                <a href="index.html"><img src="./images/Logo FG - Diseño y Programación Web Oscuro.png" alt="Logo FG Programación Web" class="logo-navegacion"></a>
+            </nav>
+    </header>
+    <main>
+        <!-- SECCIÓN UNO - HERO -->
+        <section class="seccion-uno">
+            <h1 class="texto-mediano">Diseño Web WordPress</h1>
+            <p class="texto-grande" id="maquina-de-escribir">Landing Page</p>
+            <a href="#somos-expertos"><i class="fa-solid fa-arrow-down"></i></a>
+        </section>
+        <!-- SECCIÓN DOS - ENFOCADOS EN LA CALIDAD -->
+        <section class="seccion-flex row-reverse" id="somos-expertos">
+            <div class="contenedor-grande contenedor-grande-izquierda">
+                <p class="texto-mediano">Expertos en Diseño Web</p>
+                <h2 class="texto-grande">Enfocados en la calidad.</h2>
+                <p class="texto-chico">Trabajamos con profesionalismo y atención en cada detalle para ofrecerte un sitio web que cumpla con tus expectativas.</p>
+                <button class="texto-chico"><a href="#contacto">Contáctanos <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+            <div class="contenedor-chico">
+                <img src="./images/Expertos en Diseño Web.png" alt="Mockup de Diseño Web Mobile" class="imagen-seccion-izq">
+            </div>
+        </section>
+        <!-- SECCIÓN TRES - LO HACEMOS REALIDAD -->
+        <section class="seccion-tres seccion-flex">
+            <div class="contenedor-grande contenedor-grande-derecha">
+                <p class="texto-mediano">¿Qué tipo de web necesitas?</p>
+                <h2 class="texto-grande">Lo hacemos realidad.</h2>
+                <p class="texto-chico">Trabajamos contigo para encontrar una solución de diseño web que se ajuste a tus necesidades, objetivos y presupuesto.</p>
+                <ul class="texto-chico lista">
+                    <li>Ecommerce</li>
+                    <li>Institucional</li>
+                    <li>Landing / Onepage / Blog</li>
+                    <li>Proyectos personalizados</li>
+                </ul>
+                <button class="texto-chico"><a href="#contacto">Contáctanos <i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+            <div class="contenedor-chico">
+                <img src="./images/Diseños Web Profesionales.png" alt="Diseños web profesionales" class="img-seccion-der">
+            </div>
+        </section>
+        <!-- SECCIÓN CUATRO - PRINCIPALES HABILIDADES -->
+        <section class="seccion-cuatro seccion-flex row-reverse">
+            <div class="contenedor-grande contenedor-grande-izquierda">
+                <p class="texto-mediano">Diseño Web profesional</p>
+                <h2 class="texto-grande">Principales Habilidades.</h2>
+                <h3 class="texto-mediano">01. Responsive</h3>
+                <p class="texto-chico">Creamos sitios web responsivos para garantizar una experiencia óptima de usuario en todos los dispositivos.</p>
+                <h3 class="texto-mediano">02. Maquetado</h3>
+                <p class="texto-chico">¿Tienes un diseño existente o necesitas uno nuevo? No importa, aquí nos adaptamos y lo hacemos con las mejores herramientas de construcción visual.</p>
+                <h3 class="texto-mediano">03. Ecommerce</h3>
+                <p class="texto-chico">Nos aseguramos de que tu tienda en línea tenga todas las funcionalidades necesarias para operar sin problemas.</p>
+            </div>
+            <div class="contenedor-chico">
+                <img src="./images/habilidades diseño web.png" alt="Habilidades Diseño Web" class="imagen-seccion-izq">
+            </div>
+        </section>
+        <!-- SECCIÓN CINCO - CONTACTO -->
+        <section class="seccion-flex" id="contacto">
+            <div class="contenedor-grande contenedor-grande-derecha">
+                <p class="texto-mediano">Trabajemos juntos</p>
+                <h2 class="texto-grande">Contacto.</h2>
+                <div class="contenedor-datos">
+                    <div class="borde-abajo">
+                        <h3 class="texto-mediano">Email</h3>
+                        <a href="mailto:fgprogramacionweb@gmail.com" class="texto-mediano-hover">
+                            <p>fgprogramacionweb@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="borde-abajo">
+                        <h3 class="texto-mediano">WhatsApp</h3>
+                        <a href="https://wa.link/pfq4lz" class="texto-mediano-hover">
+                            <p>+54 9 358 4866129</p>
+                        </a>
+                    </div>
+                    <div class="borde-abajo">
+                        <h3 class="texto-mediano">Ubicación</h3>
+                        <p>Río Cuarto - Córdoba - Argentina</p>
+                    </div>
+                </div>
+                <h2 class="texto-mediano">¿Qué necesitas?</h2>
+                <p class="texto-chico">Esperamos tu mensaje, respondemos en menos de 24hs hábiles.</p>
+            </div>
+            <div class="contenedor-chico contenedor-form">
+                <form action="">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="Email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="message" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="boton-formulario">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <!-- SECCIÓN SEIS - PORTAFOLIO -->
+        <section class="seccion-portafolio" id="portafolio">
+            <p class="texto-mediano">Diseñar webs es nuestra pasión.</p>
+            <h2 class="texto-grande">Portafolio.</h2>
+            <p class="texto-chico">No dudes en contactarnos si necesitas cotización para realizar una web o algún proyecto en particular.</p>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA UNO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - TattooSkink.png" alt="Portada de Página Web de TattooSkink">
+                    <div class="overlay">
+                        <h3>Tattoo Skink</h3>
+                        <p>Tienda online</p>
+                        <a href="./html/tattoo-skink.html" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA DOS -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Aloha Viajes y Turismo.png" alt="Portada de Página Web de ALH Viajes y Turismo">
+                    <div class="overlay">
+                        <h3>Aloha Viajes y Turismo</h3>
+                        <p>Sitio web de viajes</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA TRES -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Technitiger.png" alt="Portada de Página Web de Technitiger">
+                    <div class="overlay">
+                        <h3>Technitiger</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA CUATRO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Cama Balinesa.png" alt="Portada de Página Web de Cama Balinesa">
+                    <div class="overlay">
+                        <h3>Cama Balinesa</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA CINCO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Central Baterias.png" alt="Portada de Página Web de Central Baterias Tiendanube">
+                    <div class="overlay">
+                        <h3>Central Baterias</h3>
+                        <p>Tiendanube</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA SEIS -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Boda.png" alt="Portada de Página Web de Boda Joaco y Ro">
+                    <div class="overlay">
+                        <h3>Boda Joaco y Ro</h3>
+                        <p>Presentación Boda</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA SIETE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Bivento Viajes.png" alt="Portada de Página Web de Bivento Viajes">
+                    <div class="overlay">
+                        <h3>Bivento Viajes</h3>
+                        <p>Sitio web de viajes</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA OCHO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Culture Tattoo.png" alt="Portada de Página Web de Culture Tattoo">
+                    <div class="overlay">
+                        <h3>Culture Tattoo</h3>
+                        <p>Portal web</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA NUEVE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Turismo Alemar.png" alt="Portada de Página Web de Turismo Alemar">
+                    <div class="overlay">
+                        <h3>Turismo Alemar</h3>
+                        <p>Sitio web de viajes</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA DIEZ -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Desguaces Gualda.png" alt="Portada de Página Web de Desguaces Gualda">
+                    <div class="overlay">
+                        <h3>Desguaces Gualda</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA ONCE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - The Cryptos House.png" alt="Portada de Página Web de The Crypto's House">
+                    <div class="overlay">
+                        <h3>The Crypto's House</h3>
+                        <p>Academia online</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA DOCE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Visa Gestiones.png" alt="Portada de Página Web de Visa Gestiones">
+                    <div class="overlay">
+                        <h3>Visa Gestiones</h3>
+                        <p>Landing Page</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA TRECE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Ondo Ibili.png" alt="Portada de Página Web de Ondo Ibili">
+                    <div class="overlay">
+                        <h3>Ondo Ibili</h3>
+                        <p>Sitio web de viajes</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA CATORCE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Tarot de los Enamorados.png" alt="Portada de Página Web de Tarot de los enamorados">
+                    <div class="overlay">
+                        <h3>Tarot de los enamorados</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA QUINCE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Cursos avantgarde.png" alt="Portada de Página Web de Cursos AvantGarde">
+                    <div class="overlay">
+                        <h3>Cursos Avantgarde</h3>
+                        <p>Academia online</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA DIECISEIS -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Alveaso Logistics.png" alt="Portada de Página Web de Alveaso Logistic">
+                    <div class="overlay">
+                        <h3>Alveaso Logistic</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA DIECISIETE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Impresiones serigráfias Muñoz.png" alt="Portada de Página Web de Impresiones serigráficas Muñoz">
+                    <div class="overlay">
+                        <h3>Impresiones serigráficas Muñoz</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA DIECIOCHO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Acevending.png" alt="Portada de Página Web de Acevending">
+                    <div class="overlay">
+                        <h3>Acevending</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA DIECINUEVE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Grupo Transalex.png" alt="Portada de Página Web de Grupo Transalex">
+                    <div class="overlay">
+                        <h3>Grupo Transalex</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Procalor80.png" alt="Portada de Página Web de ProCalor80">
+                    <div class="overlay">
+                        <h3>Procalor80</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTIUNO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Eugenia Viajes.png" alt="Portada de Página Web de Eugenia Viajes">
+                    <div class="overlay">
+                        <h3>Eugenia Viajes</h3>
+                        <p>Sitio web de viajes</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA VEINTIDOS -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Centro de Idiomas.png" alt="Portada de Página Web de Centro de idiomas">
+                    <div class="overlay">
+                        <h3>Centro de Idiomas</h3>
+                        <p>Landing Page</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTITRES -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - EditMovieFG.png" alt="Portada de Página Web de EditMovieFG">
+                    <div class="overlay">
+                        <h3>EditMovieFG</h3>
+                        <p>Landing Page</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTICUATRO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Il Capitano Web.png" alt="Portada de Página Web de Il Capitano">
+                    <div class="overlay">
+                        <h3>Il Capitano</h3>
+                        <p>Landing Page</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA VEINTICINCO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Cubiex.png" alt="Portada de Página Web de Cubiex">
+                    <div class="overlay">
+                        <h3>Cubiex</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTISEIS -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Tecnologia.png" alt="Portada de Página Web de Tecnología.net">
+                    <div class="overlay">
+                        <h3>Tecnología</h3>
+                        <p>Blog</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTISIETE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Avantgarde Tattoo Barcelona.png" alt="Portada de Página Web de Avantgarde Tattoo">
+                    <div class="overlay">
+                        <h3>Avantgarde Tattoo Barcelona</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-tres-paginas">
+                <!-- PÁGINA VEINTIOCHO -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Elebar Cerveceria.png" alt="Portada de Página Web de EleBAR Cervecería">
+                    <div class="overlay">
+                        <h3>EleBAR Cervecería</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA VEINTINUEVE -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - Home Noticias.png" alt="Portada de Página Web de Homepage noticias">
+                    <div class="overlay">
+                        <h3>Homepage Noticias</h3>
+                        <p>Homepage</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- PÁGINA TREINTA -->
+                <div class="image-portada-container">
+                    <img src="./images/Portadas Páginas Web/Portada - CasasLujo.png" alt="Portada de Página Web de CasasLujo">
+                    <div class="overlay">
+                        <h3>CasasLujo</h3>
+                        <p>Sitio web corporativo</p>
+                        <a href="#" class="button">
+                            <div>
+                                <span>Ver proyecto</span>
+                                <i class="fa-solid fa-circle-arrow-right" style="color: #000033;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCIÓN SIETE - COMMUNITY MANAGER -->
+        <section class="seccion-cm" id="community-manager">
+            <p class="texto-mediano">Especialidad en Canva y CapCut</p>
+            <h2 class="texto-grande">Community Manager.</h2>
+            <p class="texto-chico">Además del diseño web, ofrecemos servicios de Community Management enfocados en contenido visual y dinámico. Creamos y editamos piezas gráficas y videos en Canva y CapCut, manteniendo una estética profesional y una estrategia efectiva para conectar con tu audiencia.</p>
+            <h3>¿Te interesa ver nuestro trabajo en gestión de redes?</h3>
+            <button class="texto-chico"><a href="https://wa.link/pfq4lz" arget="_blank">Consulta nuestro Portafolio<i class="fa-solid fa-chevron-right"></i></a></button>
+        </section>
+    </main>
+    <footer>
+        <a href="index.html"><img src="./images/Logo FG - Diseño y Programación Web Oscuro.png" alt="Logo FG Programación Web" class="logo-oscuro"></a>
+        <div>
+            <h3>Enlaces rápidos</h3>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="./index.html"><p>Inicio</p></a>
+            </div>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#portafolio"><p>Portfolio Diseño Web</p></a>
+            </div>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#community-manager"><p>Community Manager</p></a>
+            </div>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#contacto"><p>Contacto</p></a>
+            </div>
+        </div>
+        <div>
+            <h3>Datos de contacto</h3>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:fgprogramacionweb@gmail.com"><p>fgprogramacionweb@gmail.com</p></a>
+            </div>
+            <div class="contenedor-chico-footer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.link/pfq4lz" target="_blank"><p>+54 3584866129</p></a>
+            </div>
+            <div class="contenedor-chico-footer">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Río Cuarto, Córdoba, Argentina</p>
+            </div>
+        </div>
+        <div>
+            <h3>Nuestras redes</h3>
+            <div class="iconos-sociales">
+                <a href="https://wa.link/pfq4lz" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/fedegeretto" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@fgprogramacionweb" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@fgprogramacionweb" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+    <script src="./menu.js"></script>
+</body>
+</html>
