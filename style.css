@@ -639,12 +639,48 @@ footer h3{
     display: none;
 }
 
+.link-proyecto{
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.link-proyecto:hover{
+    background-color: #000033;
+}
+
 .bg-tattoo-skink{
     background-color: #af0505;
 }
 
 .bg-aloha-viajes{
     background-color: #f7a517;
+}
+
+.bg-technitiger{
+    background-color: #543303;
+}
+
+.bg-camabalinesa{
+    background-color: #7A3520;
+}
+
+.bg-centralbaterias{
+    background-color: #001745;
+}
+
+.bg-nuestrahistoria{
+    background-color: #C89F6A;
+}
+
+.bg-bivento-viajes{
+    background-color: #2C2C2C;
+}
+
+.bg-culture-tattoo{
+    background-color: #F57575;
 }
 
 
