@@ -542,6 +542,10 @@ footer h3{
     color: #000033;
 }
 
+.iconos-sociales i:hover{
+    color: #000;
+}
+
 .redes-sociales{
     display: flex;
     flex-direction: column;
